@@ -22,7 +22,7 @@ const Dashboard2 = () => {
   useEffect(() => {
     const fetchDespesas = async () => {
       try {
-        const response = await axios.get(`http://localhost:3333/despesas/${user?.uid}`);
+        const response = await axios.get(`https://back-aprofunda-chat-despesa.onrender.com/despesas/${user?.uid}`);
         setDespesas(response.data);
       } catch (error) {
         console.error("Erro ao buscar despesas:", error);

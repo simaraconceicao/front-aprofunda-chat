@@ -38,7 +38,7 @@ const CriarDespesas = () => {
     setIsLoading(true); // Ativa o estado de carregamento
 
     try {
-      const response = await axios.post('http://localhost:3333/despesas', despesaData, {
+      const response = await axios.post('https://back-aprofunda-chat-despesa.onrender.com/despesas', despesaData, {
         headers: {
           'Content-Type': 'application/json',
         },

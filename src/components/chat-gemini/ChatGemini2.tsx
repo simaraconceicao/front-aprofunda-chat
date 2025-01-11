@@ -25,7 +25,7 @@ const ChatGemini2 = () => {
   const createSession = async () => {
     try {
       // Envia o uid e a mensagem inicial
-      const response = await axios.post("http://localhost:3333/chat", {
+      const response = await axios.post("https://back-aprofunda-chat-despesa.onrender.com/chat", {
         uid: user?.uid,
         message: "Iniciando conversa", // Mensagem inicial
       });
@@ -55,7 +55,7 @@ const ChatGemini2 = () => {
 
     try {
       // Envia apenas o UID e a mensagem do usuário
-      const response = await axios.post("http://localhost:3333/chat", {
+      const response = await axios.post("https://back-aprofunda-chat-despesa.onrender.com/chat", {
         uid: user?.uid,
         message: input, // Mensagem do usuário
       });
